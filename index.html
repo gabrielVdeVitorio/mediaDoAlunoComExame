@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Calcule a média do aluno</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Calcule a media do aluno">
+    <meta name="keywords" content="media, aluno, nota final">
+    <meta name="description" content="Uma página que calcula a média de um aluno usando quatro valores">
+    <meta name="author" content="Gabriel Vitório dos Santos">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h2>Calcule a média do aluno digitando as notas nos campos abaixo:</h2>
+        <form id="userForm">
+            <div class="inputs">
+                <label for="nota01">Primeira nota:</label>
+                <input type="number" id="value01" place-holder="Digite a nota do aluno" required autofocus>
+            </div>
+
+            <div class="inputs">
+                <label for="nota02">Segunda nota:</label>
+                <input type="number" id="value02" place-holder="Digite a nota do aluno" required>
+            </div>
+
+            <div class="inputs">
+                <label for="nota03">Terceira nota:</label>
+                <input type="number" id="value03" place-holder="Digite a nota do aluno" required>
+            </div>
+
+            <div class="inputs">
+                <label for="nota04">Quarta nota:</label>
+                <input type="number" id="value04" place-holder="Digite a nota do aluno" required>
+            </div>
+
+            <div id="aditionalClass" class="inputs">
+                <label for="nota04">Nota do exame de recuperação:</label>
+                <input type="number" id="value05" place-holder="Digite a nota do aluno">
+            </div>
+
+            <div id="btn"><button id="calcularMedia" type="submit">Calcular Média</button></div>
+        </form>
+        <p id="mediaDoAluno"></p>
+    </main>
+</body>
+</html>
