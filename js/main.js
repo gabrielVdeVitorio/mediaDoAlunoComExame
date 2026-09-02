@@ -23,7 +23,7 @@ form.addEventListener("submit", (event) =>
         if (media < 7)
         {
             awaitingExam = true;
-            aditionalClass.style.display = "block";
+            aditionalClass.style.display = "flex";
             value05Input.required = true;
             mediaDoAluno.textContent = `A média inicial do aluno é: ${media.toFixed(2)}, será necessário fazer o exame. Digite a nota do exame no campo acima e clique em "Calcular Média" novamente.`;
 
